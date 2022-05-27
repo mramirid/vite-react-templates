@@ -1,4 +1,4 @@
-# Vite React Template
+# Vite React Redux Template
 
 My base template for React project.
 

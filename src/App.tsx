@@ -1,42 +1,54 @@
-import { useState } from "react";
 import "./App.css";
+import { Counter } from "./features/counter/Counter";
 import logo from "./logo.svg";
 
 export default function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
+        <Counter />
         <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
+          Edit <code>src/App.tsx</code> and save to reload.
         </p>
-        <p>
-          Edit <code>App.tsx</code> and save to test HMR updates.
-        </p>
-        <p>
+        <span>
+          <span>Learn </span>
           <a
             className="App-link"
-            href="https://reactjs.org"
+            href="https://reactjs.org/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn React
+            React
           </a>
-          {" | "}
+          <span>, </span>
           <a
             className="App-link"
-            href="https://vitejs.dev/guide/features.html"
+            href="https://redux.js.org/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Vite Docs
+            Redux
           </a>
-        </p>
+          <span>, </span>
+          <a
+            className="App-link"
+            href="https://redux-toolkit.js.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Redux Toolkit
+          </a>
+          ,<span> and </span>
+          <a
+            className="App-link"
+            href="https://react-redux.js.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            React Redux
+          </a>
+        </span>
       </header>
     </div>
   );
