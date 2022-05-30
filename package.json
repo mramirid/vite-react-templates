@@ -8,6 +8,15 @@
     "preview": "vite preview",
     "tc": "tsc --noEmit"
   },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "plugin:jsx-a11y/recommended"
+    ],
+    "plugins": [
+      "jsx-a11y"
+    ]
+  },
   "dependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
