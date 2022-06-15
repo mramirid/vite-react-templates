@@ -6,16 +6,27 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "tc": "tsc --noEmit"
+    "prettier": "prettier --write src",
+    "type-check": "tsc --noEmit src",
+    "lint": "eslint src",
+    "lint-and-fix": "eslint --fix src"
   },
   "eslintConfig": {
+    "root": true,
+    "parser": "@typescript-eslint/parser",
     "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended",
       "react-app",
-      "plugin:jsx-a11y/recommended"
+      "plugin:jsx-a11y/recommended",
+      "prettier"
     ],
     "plugins": [
       "jsx-a11y"
-    ]
+    ],
+    "rules": {
+      "@typescript-eslint/consistent-type-imports": "error"
+    }
   },
   "dependencies": {
     "react": "^18.0.0",
@@ -24,11 +35,15 @@
   "devDependencies": {
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.28.0",
+    "@typescript-eslint/parser": "^5.28.0",
     "@vitejs/plugin-react": "^1.3.0",
-    "eslint": "^8.0.0",
+    "eslint": "^8.16.0",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-jsx-a11y": "^6.5.1",
-    "typescript": "^4.6.3",
+    "prettier": "^2.7.0",
+    "typescript": "^4.6.4",
     "vite": "^2.9.9"
   }
 }

@@ -3,7 +3,12 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./index.css";
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
+const rootElement = document.getElementById("root");
+if (rootElement === null) {
+  throw new Error("The root element is undefined");
+}
+
+ReactDOM.createRoot(rootElement).render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
