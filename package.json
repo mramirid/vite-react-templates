@@ -25,7 +25,8 @@
       "jsx-a11y"
     ],
     "rules": {
-      "@typescript-eslint/consistent-type-imports": "error"
+      "@typescript-eslint/consistent-type-imports": "error",
+      "no-duplicate-imports": "error"
     }
   },
   "dependencies": {
