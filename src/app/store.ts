@@ -1,7 +1,13 @@
-import type { Action, ThunkAction } from "@reduxjs/toolkit";
-import { configureStore } from "@reduxjs/toolkit";
-import type { TypedUseSelectorHook } from "react-redux";
-import { useDispatch, useSelector } from "react-redux";
+import {
+  configureStore,
+  type Action,
+  type ThunkAction,
+} from "@reduxjs/toolkit";
+import {
+  useDispatch,
+  useSelector,
+  type TypedUseSelectorHook,
+} from "react-redux";
 import { counterReducer } from "../features/counter/counter.slice";
 
 export const store = configureStore({
