@@ -6,7 +6,7 @@ The react-ts boilerplate from Vite doesn't include ESLint and Prettier, so I add
 
 ## Branches
 
-| Branch           | Description                                        |
-| ---------------- | -------------------------------------------------- |
-| master           | Vite + React + TypeScript + ESLint                 |
-| with-react-redux | Vite + React + TypeScript + Redux Toolkit + ESLint |
+| Branch      | Description                                        |
+| ----------- | -------------------------------------------------- |
+| master      | Vite + React + TypeScript + ESLint                 |
+| react-redux | Vite + React + TypeScript + Redux Toolkit + ESLint |
